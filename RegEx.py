@@ -2,45 +2,96 @@
 # 4/23/20
 # RegEx
 
+import re
 
 def check_q(string):
-    return
+    x = re.search('q', string)
+    if (x):
+        found = True
+    else:
+        found = False
+    return found
 
 
 def check_the(string):
-    return
+    x = re.search('the', string)
+    if (x):
+        found = True
+    else:
+        found = False
+    return found
 
 
 def check_ast(string):
-    return
+    x = re.search('\*', string)
+    if (x):
+        found = True
+    else:
+        found = False
+    return found
 
 
 def check_digit(string):
-    return
+    x = re.search('\d', string)
+    if (x):
+        found = True
+    else:
+        found = False
+    return found
 
 
 def check_period(string):
-    return
+    x = re.search('\.', string)
+    if (x):
+        found = True
+    else:
+        found = False
+    return found
 
 
 def check_consec_vowel(string):
-    return
+    x = re.search('q', string)
+    if (x):
+        found = True
+    else:
+        found = False
+    return found
 
 
 def check_space(string):
-    return
+    x = re.search('q', string)
+    if (x):
+        found = True
+    else:
+        found = False
+    return found
 
 
 def check_triple(string):
-    return
+    x = re.search('q', string)
+    if (x):
+        found = True
+    else:
+        found = False
+    return found
 
 
 def check_Hello(string):
-    return
+    x = re.search('Hello', string)
+    if (x):
+        found = True
+    else:
+        found = False
+    return found
 
 
 def check_email(string):
-    return
+    x = re.search('q', string)
+    if (x):
+        found = True
+    else:
+        found = False
+    return found
 
 
 print("Enter string here:")
@@ -63,9 +114,21 @@ while finish is not True:
 
     choice = int(input("> "))
     if choice == 1:
-        check_q(string)
+        find = check_q(string)
+        if find is True:
+            print(find)
+            print("There is a 'q' in the string.")
+        else:
+            print(find)
+            print("there is not a 'q' in the string.")
     elif choice == 2:
-        check_the(string)
+        find = check_the(string)
+        if find is True:
+            print(find)
+            print("There is a 'the' in the string.")
+        else:
+            print(find)
+            print("there is not a 'the' in the string.")
     elif choice == 3:
         check_ast(string)
     elif choice == 4:
